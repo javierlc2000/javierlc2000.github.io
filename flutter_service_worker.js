@@ -1,7 +1,7 @@
 'use strict';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "913a4f21bf6fe9b7173c50099cb0b122",
+  "assets/AssetManifest.json": "8a6a1d3b95178d9755acc909726a57d0",
 "assets/assets/BalooChettan2-Bold.ttf": "ad014a48dd8a02c04ca934fbdc99dc1f",
 "assets/assets/images/abracada.png": "5c80b7c1f98fed92ff4745468e07456c",
 "assets/assets/images/ainaazkargorta.png": "8a77495eed95297b5b282b56dc85a332",
@@ -20,6 +20,7 @@ const RESOURCES = {
 "assets/assets/images/assemblea.png": "3300eeef7b198ed4eee99d96d624a19f",
 "assets/assets/images/baixet.png": "9e841b39bf2931cf3b228929ce4a2ec9",
 "assets/assets/images/barja.png": "8c85a924e5cf12ed99a7d6ba2575503a",
+"assets/assets/images/barrokos.png": "6691c901753f13327fd18bda41183416",
 "assets/assets/images/barsanjuan.png": "af1e8389b6ceedb62da496d79e3d7076",
 "assets/assets/images/biblio.png": "768cbdc2f6b9703af5f51896d34da549",
 "assets/assets/images/bikinada.png": "612599ecf673cbffde7d8e1740fe54ea",
@@ -101,6 +102,7 @@ const RESOURCES = {
 "assets/assets/images/jordicondom.png": "aec778b50ceda6ae1f7b3802c47e759a",
 "assets/assets/images/jordivila.png": "e5d216aeb15f8f809a5c45f21a3867c2",
 "assets/assets/images/josepfontana.png": "962a0150cb1c670a5356fa548ffb4bc2",
+"assets/assets/images/jutge.png": "26a34d9b0987ccc4402ab2260cef1b9b",
 "assets/assets/images/k9.png": "0662ab05ffc41ab18d4d76a2bdb69b26",
 "assets/assets/images/laiapomar.png": "b748c41d4c45a4f8a14cc9c6208e2b41",
 "assets/assets/images/lamari.png": "213fff5a933cbe925be2649f395bc7d7",
@@ -195,7 +197,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "77aec09a3dd08799ddf70af35b7faed3",
 "/": "77aec09a3dd08799ddf70af35b7faed3",
-"main.dart.js": "51a1d9310f49b4bc360e2aa95c458b32",
+"main.dart.js": "7c58ce9b6c30aa1c7fd56b838eaf0f31",
 "manifest.json": "a69ab148317a804abd8ef8dc66c5cc91"
 };
 

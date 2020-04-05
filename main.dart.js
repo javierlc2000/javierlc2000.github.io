@@ -16301,7 +16301,7 @@ p=new H.ao(new H.ap())
 p.sac(0,new P.G(b))
 m=2*t.z
 s.aB(P.dK(new P.I(r,r,r+(o-n),r+(q-n)),new P.aH(m,m)),p)
-l=U.b_(d,Q.b0(A.b1(new P.G(c),a,t.f+t.z),"Little FME"),C.o,C.j)
+l=U.b_(d,Q.b0(A.b1(new P.G(c),a,Math.min(t.f+t.z,t.c.a/7)),"Little FME"),C.o,C.j)
 l.c5(t.c.a-2*t.z)
 m=t.z
 n=t.c.b
@@ -16338,7 +16338,7 @@ k=P.dK(new P.I(q,i,q+(4*o-r),i+(n-r)),new P.aH(m,m))
 j=new H.ao(new H.ap())
 j.sac(0,new P.G(a0))
 s.aB(k,j)
-l=U.b_(d,Q.b0(A.b1(new P.G(b),a,1.6*t.f-2*t.z),"Jugar!"),C.o,C.j)
+l=U.b_(d,Q.b0(A.b1(new P.G(b),a,Math.min(1.6*t.f-2*t.z,t.c.a/5)),"Jugar!"),C.o,C.j)
 l.c5(t.c.a)
 r=t.c.b
 q=t.f
@@ -16385,23 +16385,22 @@ m=A.b1(new P.G(a1),d,2*t.z)
 o=t.x1
 r=o.c
 l=U.b_(1,Q.b0(m,J.qb(r,o.ch?" \u2713":"")),C.o,C.j)
-r=t.c.a
-q=t.z
-l.eb(r-6*q,r-4*q)
-q=t.z
-r=t.x
-s.a2(l.a,new P.H(2*q,6*q+r))
-l=U.b_(2,Q.b0(A.b1(new P.G(a1),d,t.z),t.x1.d),C.o,C.j)
-r=t.c.a-6*t.z
+r=t.c.a-4*t.z
 l.eb(r,r)
 r=t.z
-q=3*r
+q=t.x
+s.a2(l.a,new P.H(2*r,6*r+q))
+l=U.b_(2,Q.b0(A.b1(new P.G(a1),d,t.z),t.x1.d),C.o,C.j)
+q=t.c.a-6*t.z
+l.eb(q,q)
+q=t.z
+r=3*q
 n=t.x
-s.a2(l.a,new P.H(q,6*r+n+q))
-q=t.x1
-f=q.x!=null?1:0
-if(q.y!=null)++f
-e=C.f.j(q.z!=null?f+1:f)+"/"+J.cE(t.x1.Q)+" receptes descobertes"
+s.a2(l.a,new P.H(r,6*q+n+r))
+r=t.x1
+f=r.x!=null?1:0
+if(r.y!=null)++f
+e=C.f.j(r.z!=null?f+1:f)+"/"+J.cE(t.x1.Q)+" receptes descobertes"
 if(t.x1.Q===0)e="Aquest element \xe9s b\xe0sic"
 l=U.b_(1,Q.b0(A.b1(new P.G(a1),d,t.z),e),C.hs,C.j)
 r=t.c.a-6*t.z
@@ -21113,11 +21112,11 @@ r=s.z
 if(r==null){s.z=t
 return}else if(r===t)return}}
 U.m5.prototype={
-fw:function(q9){var t=0,s=P.V(u.z),r=this,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,f0,f1,f2,f3,f4,f5,f6,f7,f8,f9,g0,g1,g2,g3,g4,g5,g6,g7,g8,g9,h0,h1,h2,h3,h4,h5,h6,h7,h8,h9,i0,i1,i2,i3,i4,i5,i6,i7,i8,i9,j0,j1,j2,j3,j4,j5,j6,j7,j8,j9,k0,k1,k2,k3,k4,k5,k6,k7,k8,k9,l0,l1,l2,l3,l4,l5,l6,l7,l8,l9,m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,o0,o1,o2,o3,o4,o5,o6,o7,o8,o9,p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,q0,q1,q2,q3,q4,q5,q6,q7,q8
-var $async$fw=P.R(function(r0,r1){if(r0===1)return P.S(r1,s)
+fw:function(r1){var t=0,s=P.V(u.z),r=this,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,f0,f1,f2,f3,f4,f5,f6,f7,f8,f9,g0,g1,g2,g3,g4,g5,g6,g7,g8,g9,h0,h1,h2,h3,h4,h5,h6,h7,h8,h9,i0,i1,i2,i3,i4,i5,i6,i7,i8,i9,j0,j1,j2,j3,j4,j5,j6,j7,j8,j9,k0,k1,k2,k3,k4,k5,k6,k7,k8,k9,l0,l1,l2,l3,l4,l5,l6,l7,l8,l9,m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,o0,o1,o2,o3,o4,o5,o6,o7,o8,o9,p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,q0,q1,q2,q3,q4,q5,q6,q7,q8,q9,r0
+var $async$fw=P.R(function(r2,r3){if(r2===1)return P.S(r3,s)
 while(true)switch(t){case 0:t=2
 return P.a1($.FQ().fv(),$async$fw)
-case 2:r.c=r1
+case 2:r.c=r3
 r.mC()
 r.cy=-1
 r.db=r.ch=r.Q=0
@@ -21356,7 +21355,7 @@ j3=K.i(r,"ainaazkargorta","Aina","Cognom m\xe9s complicat de la FME")
 r.k3.h(0,"ainaazkargorta",j3)
 j4=K.i(r,"perellorens","Pere Llorens","El hada del bosque")
 r.k3.h(0,"perellorens",j4)
-j5=K.i(r,"narciso","Narciso","\\//_")
+j5=K.i(r,"narciso","Narciso","\\\\//_")
 r.k3.h(0,"narciso",j5)
 j6=K.i(r,"jocdalgorismia","Joc d\u2019algor\xedsmia","Dummy 1000 Tu 40")
 r.k3.h(0,"jocdalgorismia",j6)
@@ -21504,6 +21503,17 @@ q7=K.i(r,"danivilardell","Dani Vilardell","El teclas")
 r.k3.h(0,"danivilardell",q7)
 q8=K.i(r,"baixet","Baixet","1.5")
 r.k3.h(0,"baixet",q8)
+q9=K.i(r,"jutge","Jutge","Only he can __ you")
+r.k3.h(0,"jutge",q9)
+r0=K.i(r,"barrokos","Barrokos","On la festa continua")
+r.k3.h(0,"barrokos",r0)
+r.k4.h(0,"fme-gespeta",G.f(r,"frisbee2",g,d0,d9))
+r.k4.h(0,"dades-tonto",G.f(r,"info2",k9,k8,h6))
+r.k4.h(0,"cfis-tonto",G.f(r,"info3",a5,k8,h6))
+r.k4.h(0,"info-profe",G.f(r,"roura3",h6,a2,h0))
+r.k4.h(0,"ressaca-ressaca",G.f(r,"dormir3",a6,a6,c3))
+r.k4.h(0,"info-roura",G.f(r,"jutge1",h6,h0,q9))
+r.k4.h(0,"festa-fme",G.f(r,"barrokos1",c,g,r0))
 r.k4.h(0,"alcohol-fme",G.f(r,"birres1",m,g,e))
 r.k4.h(0,"mates-mates",G.f(r,"fme1",n,n,g))
 r.k4.h(0,"cuqui-mates",G.f(r,"novatos1",j,n,f))
@@ -21595,7 +21605,6 @@ r.k4.h(0,"cefme-gespeta",G.f(r,"pichi1",g4,d0,h1))
 r.k4.h(0,"erikferrando-javilopezcontreras",G.f(r,"pelea2",c4,g8,b7))
 r.k4.h(0,"cuqui-profe",G.f(r,"jaumemarti1",j,a2,h3))
 r.k4.h(0,"barsanjuan-ivetacosta",G.f(r,"cubatada1",a3,h,h4))
-r.k4.h(0,"mates-roura",G.f(r,"info1",n,h0,h6))
 r.k4.h(0,"marionasanchez-salseo",G.f(r,"lamari1",e7,k,h7))
 r.k4.h(0,"alcohol-dele",G.f(r,"sortida3",m,a7,b6))
 r.k4.h(0,"cuqui-info",G.f(r,"mariaprat1",j,h6,h8))
@@ -21897,9 +21906,9 @@ r.x1=r.k3.i(0,q.b)}}else if(p==="details"){q=r.c.a
 p=4*r.z
 if(U.bW(o,n,q-p,p)<r.f)r.fx="add"}},
 mC:function(){var t,s,r,q,p=this
-p.f=60
+p.f=50
 p.z=14
-t=p.e=C.u.c3((p.c.a-70)/74)
+t=p.e=C.u.c3((p.c.a-70)/64)
 s=p.c
 r=s.a
 q=p.z
